@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import TableEmissions from './components/TableEmissions.vue';
+import TableEmissions from './components/AppTableEmissions.vue';
 import AboutPage from './components/AppAbout.vue';
 import LegalPage from './components/AppLegal.vue';
 
