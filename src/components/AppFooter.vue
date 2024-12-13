@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>© 2024 CO₂ Emissionen Übersicht. Alle Rechte vorbehalten.
+    <p>© 2024 CO2 Emissionen Übersicht. Alle Rechte vorbehalten.
       <a href="/legal"> Rechtliche Hinweise</a>
     </p>
   </footer>
@@ -8,10 +8,13 @@
 
 <style scoped>
 footer {
-  padding: 20px;
+  padding: 2px;
   text-align: center;
-  background-color: #333;
+  background-color: dodgerblue;
   color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 a {
   color: #ffdd57;

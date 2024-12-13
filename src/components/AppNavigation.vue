@@ -12,26 +12,32 @@
 
 <style scoped>
 nav {
-  padding: 10px 30px;
   background-color: silver;
   margin-bottom: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: silver;
 }
 
 li {
-  font-size: 18px;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: gray;
+  transition: background-color 0.3s;
 }
 </style>

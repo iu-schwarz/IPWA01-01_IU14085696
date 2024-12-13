@@ -6,17 +6,17 @@
       <tr>
         <th @click="sortByColumn('country')">Land
           <span v-if="sortColumn === 'country'">
-              {{ sortAsc ? '^' : 'v' }}
+              {{ sortAsc ? 'v' : '^' }}
             </span>
         </th>
         <th @click="sortByColumn('company')">Unternehmen
           <span v-if="sortColumn === 'company'">
-              {{ sortAsc ? '^' : 'v' }}
+              {{ sortAsc ? 'v' : '^' }}
             </span>
         </th>
         <th @click="sortByColumn('emission')">CO2 Emissionen in Tonnen
           <span v-if="sortColumn === 'emission'">
-              {{ sortAsc ? '^' : 'v' }}
+              {{ sortAsc ? 'v' : '^' }}
             </span>
         </th>
       </tr>
@@ -34,7 +34,6 @@
 
 <script>
 export default {
-  name: "TableEmissions",
   data() {
     return {
       filterText: '',
@@ -51,7 +50,8 @@ export default {
     filteredAndSortedDataList() {
       let dataList = this.emissionsData.filter(dataRecord =>
           dataRecord.country.toUpperCase().includes(this.filterText.toUpperCase()) ||
-          dataRecord.company.toUpperCase().includes(this.filterText.toUpperCase())
+          dataRecord.company.toUpperCase().includes(this.filterText.toUpperCase()) ||
+          dataRecord.emission.toString().includes(this.filterText)
       );
 
       dataList = dataList.sort((a, b) => {

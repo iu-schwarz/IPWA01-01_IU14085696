@@ -36,22 +36,22 @@ export default {
 
 <style>
 html, body {
-  height: 100%; /* Setzt die Höhe von HTML und Body auf 100% */
-  margin: 0; /* Entfernt Standard-Abstände */
-  font-family: Arial, sans-serif; /* Optional für die Schriftart */
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 #app {
   display: flex;
-  flex-direction: column; /* Flexbox für vertikale Ausrichtung */
-  min-height: 100vh; /* Der Container nimmt mindestens 100% der Viewport-Höhe ein */
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-  flex: 1; /* Der Hauptinhalt nimmt den verfügbaren Platz ein */
+  flex: 1;
 }
 
-/* Stil für den Footer */
+
 footer {
   padding: 20px;
   text-align: center;
